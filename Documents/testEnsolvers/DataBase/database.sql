@@ -1,0 +1,13 @@
+/*Codes for the b.d. creation */
+CREATE DATABASE notas;
+USE notas;
+
+CREATE TABLE cliente (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  titulo VARCHAR(255) NOT NULL,
+  contenido TEXT NOT NULL,
+  categoria VARCHAR(50) NOT NULL,
+  etiquetas VARCHAR(255),
+  fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  fecha_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

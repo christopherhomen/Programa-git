@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Alamos Burgers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+      <div class="contact-info d-flex align-items-center">
+
+        <i class="bi bi-pen-fill d-flex align-items-center ms-4"></i><span class="ms-2"> ¡Escribe, inspira, sé memorable!</span>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+     <!--  <h1 class="logo me-auto me-lg-0"><a href="index.html">Alamos Burgers</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li class="dropdown"><a href="#about"><span>Sobre Nosotros</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#mision">Misión</a></li>
+              <li><a href="#vision">Visión</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#testimonials">Testimonios</a></li>
+           
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a th:href="@{/login}" class="book-a-table-btn scrollto d-none d-lg-flex">Inicio de sesión</a>
+
+    </div>
+  </header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+    <h1 class="hero-title">Explora la Magia de las Palabras</h1>
+    <p class="hero-subtitle">Tu espacio para crear, inspirar y expresar. Descubre la belleza de tus pensamientos transformados en palabras significativas.</p>
+  </div>
+</section><!-- End Hero -->
+
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Sobre Nosotros</h2>
+      <p>Conoce más sobre nuestra historia y visión.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+         <img src="assets/img/about.jpg" class="img-fluid rounded mx-auto d-block" alt="">
+      </div>
+
+      <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+        <h3>Nuestra Historia</h3>
+        <p class="fst-italic">
+          Desde nuestros humildes comienzos hasta convertirnos en líderes en gestión de notas.
+        </p>
+        <ul>
+          <li><i class="bi bi-check"></i> Fundada en 20XX</li>
+          <li><i class="bi bi-check"></i> Más de XX años de experiencia</li>
+          <li><i class="bi bi-check"></i> Satisfaciendo las necesidades de nuestros usuarios</li>
+        </ul>
+
+        <h3 id="mision">Nuestra Misión</h3>
+        <p>
+          Trabajamos arduamente para proporcionar una plataforma de gestión de notas eficiente y fácil de usar, ayudando a nuestros usuarios a alcanzar sus objetivos académicos y profesionales.
+        </p>
+
+        <h3 id="vision">Nuestra Visión</h3>
+        <p>
+          Queremos ser reconocidos como la mejor herramienta de gestión de notas, brindando innovación constante y superando las expectativas de nuestros usuarios.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
+
+    
+
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Testimonios</h2>
+      <p>Lo que dicen sobre nuestra increíble plataforma</p>
+    </div>
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              La plataforma de gestión de notas es simplemente asombrosa. Facilita mi trabajo y me ayuda a organizar mis ideas de manera efectiva. ¡Realmente ha mejorado mi productividad!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Fundador</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              La plataforma hace que la gestión de notas sea una tarea sencilla y eficiente. Estoy impresionada por la interfaz intuitiva y las funciones avanzadas. ¡Definitivamente la recomiendo!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Diseñadora</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              La experiencia con la plataforma de gestión de notas ha sido excepcional. La eficiencia y la simplicidad son incomparables. ¡Realmente ha marcado la diferencia en mi día a día!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Dueño de Tienda</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              La plataforma para gestionar notas ha simplificado mi vida profesional. Ahora puedo concentrarme más en mi trabajo sin preocuparme por la organización de la información. ¡Increíblemente útil!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              La plataforma de gestión de notas es esencial para cualquier emprendedor. Facilita la toma de decisiones y el seguimiento de tareas. ¡No podría estar más satisfecho con sus funcionalidades!
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Emprendedor</h4>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+</section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Contáctanos</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+
+     
+
+
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Ubicación</h4>
+                <p>Calle 73 Hn 1-10</p>
+              </div>
+
+ 
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>chris.a.d.97@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Teléfono:</h4>
+                <p>+57 3164212929</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+             
+<iframe style="border-radius: 15px; width: 100%; height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6563569337964!2d-76.60818788642234!3d2.434272398034199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4023a6794c3d39%3A0x63f7ec54b8c810bf!2sCalle%2073%20HN%201-10%2C%20Popay%C3%A1n%2C%20Cauca%2C%20Colombia!5e0!3m2!1ses!2sco!4v1663034180633!5m2!1ses!2sco" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-info">
+            <h3>Gestión de Notas</h3>
+            <p>
+              Calle 73 HN 1-10<br>
+              Popayán, Colombia<br><br>
+              <strong>Teléfono:</strong> 3164212929<br>
+              <strong>Email:</strong> info@gestiondenotas.com<br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Enlaces Útiles</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#about">Sobre nosotros</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#testimonials">Testimonios</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Nuestros Servicios</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño Web</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo Web</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Gestión de Productos</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño Gráfico</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Nuestro Boletín</h4>
+          <p>Recibe actualizaciones sobre nuestras últimas noticias y características.</p>
+          <form action="" method="post">
+            <input type="email" name="email" placeholder="Ingresa tu correo electrónico"><input type="submit" value="Suscribirse">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="copyright">
+      &copy; Derechos de Autor <strong><span>Gestión de Notas</span></strong>. Todos los derechos reservados.
+    </div>
+    <div class="credits">
+      Diseñado por <a href="https://bootstrapmade.com/">Jordan Homen</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
